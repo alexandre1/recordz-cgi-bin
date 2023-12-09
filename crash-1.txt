@@ -1,0 +1,81 @@
+date/time         : 2019-06-30, 14:11:52, 46ms
+computer name     : DESKTOP-19PSO8O
+user name         : 41786
+registered owner  : 41786158493 / HP Inc.
+operating system  : Windows NT New x64 build 9200
+system language   : French
+system up time    : 2 days 23 hours
+program up time   : 73 milliseconds
+processors        : 12x Intel(R) Core(TM) i7-8700T CPU @ 2.40GHz
+physical memory   : 9737/16187 MB (free/total)
+free disk space   : (C:) 297,30 GB
+display mode      : 1920x1080, 32 bit
+process id        : $3ab8
+allocated memory  : 25,53 MB
+command line      : c:/xampp/sendmail/sendmail.exe -t
+executable        : sendmail.exe
+exec. date/time   : 2012-04-16 19:30
+compiled with     : Delphi 2006/07
+madExcept version : 3.0l
+callstack crc     : $1d5da2f6, $edb3bfe7, $edb3bfe7
+exception number  : 1
+exception class   : EIdSocketError
+exception message : Socket Error # 11001 Host not found.
+
+main thread ($4364):
+00435e23 +073 sendmail.exe IdStack                        706  +42 TIdStack.RaiseSocketError
+00433faf +123 sendmail.exe IdStackWindows                1227  +55 TIdStackWindows.HostByName
+00435a75 +06d sendmail.exe IdStack                        571  +10 TIdStack.ResolveHost
+00440a70 +0fc sendmail.exe IdIOHandlerStack               314  +23 TIdIOHandlerStack.ConnectClient
+00444a9f +063 sendmail.exe IdIOHandlerSocket              335  +13 TIdIOHandlerSocket.Open
+0044157d +235 sendmail.exe IdTCPClient                    318  +53 TIdTCPClientCustom.Connect
+00445cc8 +0a4 sendmail.exe IdExplicitTLSClientServerBase  257  +23 TIdExplicitTLSClient.Connect
+0045db2d +07d sendmail.exe IdPOP3                         553   +9 TIdPOP3.Connect
+004b5b85 +cd1 sendmail.exe sendmail                       724 +242 initialization
+74348492 +022 KERNEL32.DLL                                         BaseThreadInitThunk
+
+thread $5f24:
+74348492 +22 KERNEL32.DLL  BaseThreadInitThunk
+
+thread $5b4c:
+74348492 +22 KERNEL32.DLL  BaseThreadInitThunk
+
+thread $44d8:
+74348492 +22 KERNEL32.DLL  BaseThreadInitThunk
+
+stack dump:
+0019fc74  28 5e 43 00 de fa ed 0e - 01 00 00 00 07 00 00 00  (^C.............
+0019fc84  88 fc 19 00 28 5e 43 00 - 70 cd 46 02 ec 28 43 00  ....(^C.p.F..(C.
+0019fc94  20 4f 46 02 f9 2a 00 00 - c4 fc 19 00 a4 fc 19 00  .OF..*..........
+0019fca4  cc fc 19 00 c8 4b 40 00 - c4 fc 19 00 00 00 00 00  .....K@.........
+0019fcb4  00 00 00 00 00 00 00 00 - f9 2a 00 00 20 4f 46 02  .........*...OF.
+0019fcc4  10 fd 19 00 b2 3f 43 00 - 38 fd 19 00 c8 4b 40 00  .....?C.8....K@.
+0019fcd4  10 fd 19 00 60 fd 19 00 - 6e 00 00 00 ec 28 43 00  ....`...n....(C.
+0019fce4  00 00 00 00 00 00 00 00 - 02 00 00 00 01 00 00 00  ................
+0019fcf4  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0019fd04  00 00 00 00 00 00 00 00 - 00 00 00 00 2c fd 19 00  ............,...
+0019fd14  77 5a 43 00 58 fd 19 00 - 00 00 00 00 ff ff ff 00  wZC.X...........
+0019fd24  00 1d 48 02 20 4f 46 02 - 64 fd 19 00 75 0a 44 00  ..H..OF.d...u.D.
+0019fd34  58 fd 19 00 74 fd 19 00 - c8 4b 40 00 64 fd 19 00  X...t....K@.d...
+0019fd44  b4 4e 4b 00 00 00 00 00 - 40 40 42 02 01 47 40 00  .NK.....@@B..G@.
+0019fd54  a8 fd 19 00 00 00 00 00 - 00 00 00 00 40 40 42 02  ............@@B.
+0019fd64  a8 fd 19 00 a5 4a 44 00 - 40 40 42 02 83 15 44 00  .....JD.@@B...D.
+0019fd74  80 fd 19 00 5f 4d 40 00 - a8 fd 19 00 bc fd 19 00  ...._M@.........
+0019fd84  c8 4b 40 00 a8 fd 19 00 - b4 4e 4b 00 00 00 00 00  .K@......NK.....
+0019fd94  e0 59 41 02 01 00 00 00 - c0 aa 47 02 00 00 00 00  .YA.......G.....
+0019fda4  e0 59 41 02 e0 fd 19 00 - cd 5c 44 00 b4 4e 4b 00  .YA......\D..NK.
+
+disassembling:
+[...]
+00435e13       push    eax
+00435e14       mov     ecx, [ebp-8]
+00435e17       mov     dl, 1
+00435e19       mov     eax, [$4352ac]
+00435e1e       call    -$717 ($43570c)        ; IdStack.EIdSocketError.CreateError
+00435e23     > call    -$3113c ($404cec)      ; System.@RaiseExcept
+00435e28 707   xor     eax, eax
+00435e2a       pop     edx
+00435e2b       pop     ecx
+00435e2c       pop     ecx
+00435e2d       mov     fs:[eax], edx
+[...]

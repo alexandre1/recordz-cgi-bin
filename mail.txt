@@ -1,0 +1,9 @@
+To: alexjaquet@gmail.com
+From: alexjaquet@gmail.com
+Subject: Greetings
+Hello,
+The quick brown fox jumps over the lazy dog. This is a test
+email message. Please do not reply.
+Best regards,
+---
+Vintar
